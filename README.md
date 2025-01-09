@@ -51,10 +51,6 @@ VALUES ('Camisa', 'Roupas', 50.0, 10),
 ```
 # Configuração do Projeto
 Clone o repositório:
-bash
-Always show details
-
-
 git clone https://github.com/drewneres/Desafio1/
 cd seu-repositorio
 Configure o arquivo de propriedades do banco:
@@ -76,24 +72,26 @@ public class DatabaseConfig {
 }
 ```
 Compile o projeto:
-```java
+```bash
 mvn clean install
-Executando o Projeto
 ```
 
+Executando o Projeto
 Inicie o programa:
 ```java
 mvn exec:java -Dexec.mainClass="com.loja.Main"
 ```
 Interaja com o menu:
-```java
-Adicione produtos ao carrinho;
-Atualize quantidades;
-Remova produtos;
-Calcule o valor total;
+```bash
+1. Adicionar produto ao carrinho
+2. Atualizar quantidade no carrinho
+3. Remover produto do carrinho
+4. Exibir valor total
+5. Exibir itens no carrinho
+6. Sair
 ```
 Estrutura do Projeto:
-```java
+```bash
 src/com/loja: Código principal do projeto.
 Main.java: Classe principal que contém o menu interativo.
 controller/CarrinhoController.java: Lógica de controle do carrinho de compras.
@@ -114,12 +112,12 @@ xml
 ```
 # Possíveis Problemas e Soluções
 Erro de conexão com o banco de dados:
-```java
+```bash
 Verifique se o MySQL está rodando.
 Confirme que as credenciais no arquivo DatabaseConfig.java estão corretas.
 ```
 
 Porta do MySQL bloqueada:
-```java
+```bash
 Certifique-se de que a porta 3306 está liberada no seu firewall. """
 ```
