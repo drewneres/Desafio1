@@ -53,9 +53,9 @@ VALUES ('Camisa', 'Roupas', 50.0, 10),
 Clone o repositório:
 git clone https://github.com/drewneres/Desafio1/
 cd seu-repositorio
+
 Configure o arquivo de propriedades do banco:
 Edite o arquivo src/com/loja/util/DatabaseConfig.java e insira as configurações do seu banco de dados:
-
 ```java
 public class DatabaseConfig {
     private static final String URL = "jdbc:mysql://localhost:3306/loja";
