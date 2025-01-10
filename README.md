@@ -40,6 +40,14 @@ CREATE TABLE estoque (
     preco DOUBLE NOT NULL,
     quantidade INT NOT NULL
 );
+CREATE TABLE carrinho (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    id_produto BIGINT NOT NULL,
+    quantidade INT NOT NULL,
+    id_usuario BIGINT NOT NULL,
+    FOREIGN KEY (id_produto) REFERENCES estoque(id),  
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id)  
+);
 ```
 
 
